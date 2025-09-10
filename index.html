@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biodata Diri</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #74ebd5, #ACB6E5);
+      margin: 0;
+      padding: 20px;
+    }
+    .container {
+      max-width: 650px;
+      margin: auto;
+      background: white;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      animation: fadeIn 1s ease-in-out;
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    p {
+      font-size: 16px;
+      margin: 8px 0;
+    }
+    .highlight {
+      font-weight: bold;
+      color: #0056b3;
+    }
+    .footer {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 14px;
+      color: gray;
+    }
+    button {
+      display: block;
+      margin: 15px auto;
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      background: #0056b3;
+      color: white;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover {
+      background: #003f7f;
+    }
+    #extraInfo {
+      display: none;
+      margin-top: 15px;
+      padding: 10px;
+      border-left: 4px solid #0056b3;
+      background: #f1f7ff;
+    }
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Biodata Diri</h1>
+    <p><span class="highlight">Nama Lengkap:</span> Arifah Talitha Zahra</p>
+    <p><span class="highlight">Program Studi:</span> Artifisial Intelegence</p>
+    <p><span class="highlight">Nama Proxy:</span> karnaugh</p>
+    <p><span class="highlight">Hobi:</span> Membaca, Musik</p>
+    <p><span class="highlight">Email:</span> arifahtalitha0@gmail.com</p>
+
+    <button onclick="tampilkanInfo()">Tampilkan NIM & Info Tambahan</button>
+    <div id="extraInfo">
+      <p><span class="highlight">NIM:</span> M0405241026</p>
+      <p><span class="highlight">Moto Hidup:</span> Belajar, Berkarya, Bermanfaat</p>
+    </div>
+
+    <div class="footer">
+      &copy; 2025 - Biodata Arifah TZ
+    </div>
+  </div>
+
+  <script>
+    function tampilkanInfo() {
+      const info = document.getElementById("extraInfo");
+      if (info.style.display === "none") {
+        info.style.display = "block";
+      } else {
+        info.style.display = "none";
+      }
+    }
+  </script>
+</body>
+</html>
+
